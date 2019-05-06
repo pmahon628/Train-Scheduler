@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Document</title>
+
+<!-- PSEUDOCODE - HMTL -->
+<!-- Different sections for displaying train name, destination, frequency, next arrival and minutes away -->
+<!-- section for adding train name destination, first time and frequency. -->
+
+</head>
+<style>
+
+    .jumbotron{
+        text-align: center;
+    }
+
+   </style>
+<body>
+
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Train Scheduler</h1>
+                  
+                </div>
+              </div>
+            
+              <table id="employeeData" class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name:</th>
+                    <th scope="col">Train Destination:</th>
+                    <th scope="col">Frequency (min):</th>
+                    <th scope="col">Next Arrival Time:</th>
+                    <th scope="col">Minutes Away:</th>
+                   </tr>
+                </thead>
+              </table>
+            
+              <div id="form-wrapper">
+                <p><strong>Add Train:</strong></p>
+                <form>
+                  <div class="form-group">
+                    <label for="trainName">Train Name:</label>
+                    <input type="trainName" class="form-control" id="train-name" placeholder="Amtrak" name="trainName">
+                  </div>
+                  <div class="form-group">
+                    <label for="trainDestination">Train Destination:</label>
+                    <input type="trainDestination" class="form-control" id="train-destination" placeholder="Portland" name="trainDestination">
+                  </div>
+                  <div class="form-group">
+                    <label for="Frequency">Frequency (Minutes):</label>
+                    <input type="Frequency" class="form-control" id="Frequency" placeholder="Frequency" name="Frequency">
+                  </div>
+                  <div class="form-group">
+                    <label for="nextArrivalTime">Next Arrival Time:</label>
+                    <input type="nextArrivalTine" class="form-control" id="next-arrival-time" placeholder="5:00 PM" name="nextArrivalTime">
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+                </form>
+              </div>
+            
+    
+</body>
+</html>
